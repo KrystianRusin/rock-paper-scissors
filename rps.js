@@ -32,12 +32,12 @@ const checkWinner = () => {
     resultDiv.textContent= playRound(playerChoice, computerChoice)
     gameScore.textContent = playerScore + " : " + computerScore
     if (playerScore === 5){
-        console.log("You Win!!")
+        resultDiv.textContent = "You win with a final score of:"
         playerScore = 0;
         computerScore = 0
     }
     if(computerScore === 5){
-        console.log("You Lose!!")
+        resultDiv.textContent = "You lose with a final score of:"
         playerScore = 0;
         computerScore = 0
     }
